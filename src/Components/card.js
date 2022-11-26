@@ -8,7 +8,7 @@ export default function card (props) {
         <div className='card'>
 
             <div className='image-container'>
-                <img src={ profile } className='profile-picture' alt="Profile Picture" />
+                <img src={ profile } className='profile-picture' alt="Profile" />
             </div>
 
             <div className="card-header">
