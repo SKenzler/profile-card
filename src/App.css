@@ -12,6 +12,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(45deg, #ffd104,#fbff04);
+  font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -20,7 +21,7 @@ body {
   height: 190px;
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 35px 80px #626262;
+  box-shadow: 0 10px 20px #484747;
   transition: 0.5s;
 }
 
@@ -32,17 +33,19 @@ body {
   position: absolute;
   left: 50%;
   top: -50px;
-  transform: translateX(-50%);
+  transform: translate(-50%);
   width: 150px;
   height: 150px;
   background: #000;
-  box-shadow: 0 15px 50px #626262;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px #484747;
   overflow: hidden;
+  transition: 0.5s;
 }
 
-card:hover .image-container {
-  width: 250px;
-  height: 250px;
+.card:hover .image-container {
+  width: 200px;
+  height: 200px;
 }
 
 .image-container .profile-picture {
@@ -52,4 +55,55 @@ card:hover .image-container {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.card .hero-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: start-end;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  transform: translateY(120px);
+  overflow: hidden;
+}
+
+.card .card-header h1 {
+  font-size: 1.75em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.card .card-title h2 {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #ffb120;
+}
+
+.card .card-content p {
+  font-size: 0.9em;
+  font-weight: 300;
+  padding: 20px;
+}
+
+.btn-find {
+  font-size: 0.95em;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  background: #ffb120;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-find:hover {
+  background: #fff;
+  border: 2px solid #ffb120;
+  color: #ffb120;
 }
