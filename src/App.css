@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   background: linear-gradient(45deg, #ffd104,#fbff04);
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 .card {
@@ -26,7 +27,7 @@ body {
 }
 
 .card:hover {
-  height: 450px;
+  height: 520px;
 }
 
 .image-container {
@@ -67,6 +68,12 @@ body {
   height: 40%;
   transform: translateY(120px);
   overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover .hero-container {
+  height: 100%;
+  transform: translateY(180px);
 }
 
 .card .card-header h1 {
@@ -84,7 +91,9 @@ body {
 .card .card-content p {
   font-size: 0.9em;
   font-weight: 300;
-  padding: 20px;
+  line-height: 1.4;
+  text-align: start;
+  padding: 20px 35px;
 }
 
 .btn-find {
@@ -99,7 +108,7 @@ body {
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .btn-find:hover {
