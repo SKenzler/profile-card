@@ -26,7 +26,7 @@ export default function Card (props) {
                     <p> { props.desc } </p>
                 </div>
 
-                <div className="">
+                <div className="button-container">
                     <button type="button" className="btn-find">Find out more</button>
                 </div>
 
