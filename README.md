@@ -1,6 +1,6 @@
 # React Profile Card
 
-![React Profile Card](React-profile-card.jpg)
+![React Profile Card](/src/React-profile-card.jpg)
 
 ## About The Project
 
